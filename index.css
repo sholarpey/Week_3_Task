@@ -78,7 +78,7 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    margin: -430px 0;
+    margin: -480px 0;
 }
 
 .div-1 {
@@ -112,22 +112,19 @@ input:focus {
     border: 0;
     border-radius: 8px;
     background-color: rgb(104, 194, 104);
-    margin: 30px;
-    position: absolute;
-    top: 5%;
 }
 
-.done-button-1 {
-    align-self: flex-end;
-    justify-self: right;
-    padding: 15px 20px;
-    font-size: 12px;
-    font-family: inherit;
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.space {
+    margin: 5px 0;
+}
+
+.bold {
     font-weight: bold;
-    border: 0;
-    border-radius: 8px;
-    background-color: rgb(104, 194, 104);
-    margin: 30px;
-    position: absolute;
-    top: 50%;
 }
