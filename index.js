@@ -2,7 +2,12 @@
 //     alert("Working?");
 // }
 // handler()
+// function handler() {
+//     alert("Working?");
+// }
+// handler()
 
+// Part 1
 let input1 = document.getElementById("item");
 let input2 = document.getElementById("quantity");
 let input3 = document.getElementById("message");
@@ -34,8 +39,8 @@ function handler(e) {
     button.classList.add("done-button")
 
     let div = document.createElement("div")
-
     div.classList.add("item-container")
+
     let div2 = document.createElement("div")
     div2.appendChild(h3Element)
     div2.appendChild(p)
@@ -43,19 +48,25 @@ function handler(e) {
     div.appendChild(div2)
     divContainer.appendChild(div)
     div.appendChild(button)
+
+    shoppingListHandler()
 }
-btn1.addEventListener("click", handler)
+btn1.addEventListener("click", handler);
 
-
-
-let btn2 = document.getElementsByClassName("done-button");
-
+// Part 2
 function anotherHandler(e) {
     e.preventDefault()
-    btn2[0].parentNode.remove()
-    console.log(btn2)
+    let btn = e.target
+    btn.parentNode.remove()
 }
 
-btn2[0].addEventListener("click", anotherHandler)
+function shoppingListHandler() {
+    let btn2 = document.getElementsByClassName("done-button");
 
+    for (let i = 0; i < btn2.length; i++) {
+        let currentBtn = btn2[i]
+        currentBtn.addEventListener("click", anotherHandler)
+    }
+}
 
+shoppingListHandler();

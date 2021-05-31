@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -11,38 +11,39 @@ body {
 }
 
 h1 {
-    margin: 70px 0 30px;
-    text-align: center;
     color: darkgray;
     font-weight: normal;
+    margin: 70px 0 30px;
+    text-align: center;
 }
 
 .section-1 {
-    width: 100%;
-    height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: fit-content;
     justify-content: center;
-    align-items: center;
-    margin: -250px 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .form-1 {
-    display: grid;
-    max-width: 600px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 30px;
     border: 1px solid lightgray;
     border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    padding: 30px;
+    width: 100%;
 }
 
 .input {
     border: 1px solid lightgray;
     border-radius: 4px;
-    height: 40px;
     font-size: 12px;
+    height: 40px;
     padding: 10px 15px;
 }
 
@@ -58,27 +59,27 @@ input:focus {
 }
 
 #submit-button {
-    grid-column: span 2;
     align-self: center;
-    justify-self: center;
-    padding: 10px 25px;
-    margin-top: 15px;
-    font-size: 18px;
-    font-family: inherit;
-    font-weight: bold;
     border: 0;
     border-radius: 7px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    grid-column: span 2;
+    margin-top: 15px;
+    justify-self: center;
+    padding: 10px 25px;
     background-color: rgb(104, 194, 104);
 }
 
 .section-2 {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    margin: -480px 0;
+    margin-top: 50px;
 }
 
 .div-1 {
